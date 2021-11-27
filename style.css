@@ -1,0 +1,39 @@
+body
+{
+    font-size:20px;
+    font-family:verdana; 
+    color:#000000;
+}
+
+.BtoG
+{
+    border-radius: 10px;
+    background:url(comp_1_3.gif) ;
+    display: inline-block;
+    justify-content: left;
+    padding: 10px;
+    align-items: center;
+}
+
+#num1
+{
+    display: inline-block;
+
+}
+#btoG
+{
+    display: flex;
+    /* margin-top: 20%;
+    margin-right:50%; */
+    justify-content:center; 
+    font-family:helvetica;
+    padding: 10px;
+}
+#btn
+{
+    display: inline-block;
+    width: 90%;
+    font-size: 20px;
+    background: #fff;
+
+}

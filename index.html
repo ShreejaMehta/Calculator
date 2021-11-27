@@ -1,0 +1,45 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <link rel ='stylesheet' href="style.css">
+        <meta charset="utf-8">
+        <title>Binary to Gray converter</title>
+        <h1 class='heading'>Binary to Gray converter</h1>
+    </head>
+    <body>
+        <div class="BtoG">
+            <label>Binary Number</label>
+            <input type="number" name="number1" id=num1>
+            <!-- <label>Number 2:</label>
+            <input type="number" name="number2" id=num2> -->
+            <p id='btoG'></p>
+           <button id='btn' onclick= 'btoG()'>Binary to Gray</button>
+        </div>
+        <script type="text/javascript">
+            
+            function xor_c(a,b)
+            {
+                return (a==b)?'0': '1';
+            }
+            function flip(c)
+            {
+                return (c == '0') ? '1' : '0';
+            }
+            function btoG() 
+            {
+                let gray="";
+
+            var n1=(document.getElementById('num1').value);
+
+            gray += n1[0];
+            for(let i=1; i<n1.length; i++)
+            {
+                gray+=xor_c(n1[i-1], n1[i]);
+            }
+                document.getElementById('btoG').innerHTML = "Gray equivalent is:" + gray;
+                
+            }
+
+        </script>
+    </body>
+</html>
