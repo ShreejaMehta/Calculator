@@ -4,16 +4,21 @@
         <link rel ='stylesheet' href="style.css">
         <meta charset="utf-8">
         <title>Binary to Gray converter</title>
-        <h1 class='heading'>Binary to Gray converter</h1>
     </head>
     <body>
+        <h1 class='head1'>Binary to Gray</h1>
         <div class="BtoG">
             <label>Binary Number</label>
             <input type="number" name="number1" id=num1>
-            <!-- <label>Number 2:</label>
-            <input type="number" name="number2" id=num2> -->
             <p id='btoG'></p>
            <button id='btn' onclick= 'btoG()'>Binary to Gray</button>
+        </div>
+        <h1 class='head2'>Gray to Binary</h1>
+        <div class="GtoB">
+            <label>Gray Number</label>
+            <input type="number" name="number2" id=num2> 
+            <p id='gtoB'></p>
+           <button id='btn2' onclick= 'gtoB()'>Gray to binary</button>
         </div>
         <script type="text/javascript">
             
@@ -38,6 +43,24 @@
             }
                 document.getElementById('btoG').innerHTML = "Gray equivalent is:" + gray;
                 
+            }
+            function gtoB()
+            {
+                let binary="";
+                var n2=(document.getElementById('num2').value);
+                
+                binary+=n2[0];
+
+                for(let i=1;i<n2.length;i++)
+                {
+                    if(n2[i]=='0')
+                        binary+=binary[i-1];
+                    else
+                        binary += flip(binary[i - 1]);
+                }
+
+                document.getElementById('gtoB').innerHTML = "Binary equivalent is:" + binary;
+
             }
 
         </script>

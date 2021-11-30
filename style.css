@@ -3,21 +3,39 @@ body
     font-size:20px;
     font-family:verdana; 
     color:#000000;
+    background-color:rgb(221, 161,121);
 }
 
 .BtoG
 {
     border-radius: 10px;
-    background:url(comp_1_3.gif) ;
     display: inline-block;
+    background-color: white;
     justify-content: left;
-    padding: 10px;
+    padding: 30px;
     align-items: center;
+    margin-left:10%;
 }
-
+.GtoB
+{
+    border-radius: 10px;
+    display: inline-block;
+    background-color: white;
+    justify-content: left;
+    padding: 30px;
+    padding-right:50px;
+    align-items: center;
+    margin-left: 10%;
+}
 #num1
 {
     display: inline-block;
+
+}
+#num2
+{
+    display: inline-block;
+    margin-bottom: 40px;
 
 }
 #btoG
@@ -30,6 +48,14 @@ body
     padding: 10px;
 }
 #btn
+{
+    display: inline-block;
+    width: 90%;
+    font-size: 20px;
+    background: #fff;
+
+}
+#btn2
 {
     display: inline-block;
     width: 90%;
