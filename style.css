@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body
 {
     font-size:20px;
-    font-family:verdana; 
-    color:#000000;
-    background-color:rgb(221, 161,121);
+    font-family:'Poppins', sans-serif; 
+    color: #fff;
+    background: #00A5CF;
+    /* background: linear-gradient(180deg, hsla(211, 59%, 29%, 1) 0%, hsla(195, 74%, 58%, 1) 48%, hsla(180, 86%, 56%, 1) 100%); */
 }
 
 .BtoG
@@ -15,6 +17,7 @@ body
     padding: 30px;
     align-items: center;
     margin-left:10%;
+    color: #000;
 }
 .GtoB
 {
@@ -26,17 +29,20 @@ body
     padding-right:50px;
     align-items: center;
     margin-left: 10%;
+    color: #000;
 }
 #num1
 {
     display: inline-block;
+    border-radius: 15px;
+    
 
 }
 #num2
 {
     display: inline-block;
     margin-bottom: 40px;
-
+    border-radius: 15px;
 }
 #btoG
 {
@@ -47,19 +53,35 @@ body
     font-family:helvetica;
     padding: 10px;
 }
-#btn
+/* #btoG:hover
+{
+    background-color:
+} */
+.btn
 {
     display: inline-block;
     width: 90%;
     font-size: 20px;
     background: #fff;
+    border-radius: 15px;
 
 }
-#btn2
+.btn:hover
+{
+    background: #004E64;
+    color: #fff;
+}
+.btn2
 {
     display: inline-block;
     width: 90%;
     font-size: 20px;
     background: #fff;
+    border-radius: 15px;
 
+}
+.btn2:hover
+{
+    background: hsla(211, 59%, 29%, 1);
+    color: #fff;
 }
