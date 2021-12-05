@@ -41,7 +41,6 @@ body
 #num2
 {
     display: inline-block;
-    margin-bottom: 40px;
     border-radius: 15px;
 }
 #btoG
@@ -53,10 +52,15 @@ body
     font-family:helvetica;
     padding: 10px;
 }
-/* #btoG:hover
+#gtoB
 {
-    background-color:
-} */
+    display: flex;
+    /* margin-top: 20%;
+    margin-right:50%; */
+    justify-content:center; 
+    font-family:helvetica;
+    padding: 10px;
+}
 .btn
 {
     display: inline-block;
