@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <link rel ='stylesheet' href="style.css">
+        <meta charset="utf-8">
+        <title>Gray to Binary Converter</title>
+    </head>
+    <body>
+        <h1 class='heading'>Gray To Binary Converter</h1>
+        <div class="GtoB">
+            <label>Gray Number</label>
+            <input type="number" name="number2" id=num2> 
+            <p id='gtoB'></p>
+           <button class='btn2' onclick= 'gtoB()'>Gray to binary</button>
+        </div>
+        <script type='text/javascript'>
+            function flip(c)
+            {
+                return (c == '0') ? '1' : '0';
+            }
+            function gtoB()
+            {
+                let binary="";
+                var n2=(document.getElementById('num2').value);
+                
+                binary+=n2[0];
+
+                for(let i=1;i<n2.length;i++)
+                {
+                    if(n2[i]=='0')
+                        binary+=binary[i-1];
+                    else
+                        binary += flip(binary[i - 1]);
+                }
+
+                document.getElementById('gtoB').innerHTML = "Binary equivalent is:" + binary;
+
+            }
+        </script>
+    </body>
+</html>

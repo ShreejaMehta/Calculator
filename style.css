@@ -1,35 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body
 {
-    font-size:20px;
+    font-size:30px;
     font-family:'Poppins', sans-serif; 
-    color: #fff;
-    background: #00A5CF;
-    /* background: linear-gradient(180deg, hsla(211, 59%, 29%, 1) 0%, hsla(195, 74%, 58%, 1) 48%, hsla(180, 86%, 56%, 1) 100%); */
+    color: #000;
+    background: hsla(26, 88%, 69%, 1);
+    background: linear-gradient(270deg, hsla(26, 88%, 69%, 1) 0%, hsla(7, 96%, 35%, 1) 100%);
 }
-
+.image1
+{
+    height: 80%;
+    width: 80%;
+}
+.image2
+{
+    height: 80%;
+    width: 60%;
+}
+.l1
+{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    left: 60%;
+    right: 20%;
+    margin: auto;
+    color: #000;
+    height: 27%;
+    width: 27%;
+}
+.l2 
+{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    left: 10%;
+    right: 60%;
+    margin: auto;
+    color: #000;
+    height: 27%;
+    width: 27%;
+}
+.heading
+{
+    padding-top:50px;
+    text-align: center;
+    
+}
 .BtoG
 {
+    text-align: center;
     border-radius: 10px;
-    display: inline-block;
     background-color: white;
-    justify-content: left;
-    padding: 30px;
-    align-items: center;
-    margin-left:10%;
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    left: 31%;
+    right: 40%;
+    margin: auto;
     color: #000;
+    height: 35%;
+    width: 35%;
 }
 .GtoB
 {
+    text-align: center;
     border-radius: 10px;
-    display: inline-block;
     background-color: white;
-    justify-content: left;
-    padding: 30px;
-    padding-right:50px;
-    align-items: center;
-    margin-left: 10%;
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    left: 31%;
+    right: 40%;
+    margin: auto;
     color: #000;
+    height: 35%;
+    width: 35%;
 }
 #num1
 {
@@ -45,26 +103,23 @@ body
 }
 #btoG
 {
-    display: flex;
-    /* margin-top: 20%;
-    margin-right:50%; */
-    justify-content:center; 
-    font-family:helvetica;
+    
+    display: grid;
+    margin-top: 20%;
+    text-align: center;
     padding: 10px;
 }
 #gtoB
 {
-    display: flex;
-    /* margin-top: 20%;
-    margin-right:50%; */
-    justify-content:center; 
-    font-family:helvetica;
+    display: grid;
+    margin-top: 20%;
+    text-align: center;
     padding: 10px;
 }
 .btn
 {
     display: inline-block;
-    width: 90%;
+    width: 80%;
     font-size: 20px;
     background: #fff;
     border-radius: 15px;
