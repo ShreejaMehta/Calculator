@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body
 {
-    font-size:30px;
+    font-size: 30px;
     font-family:'Poppins', sans-serif; 
     color: #000;
     background: hsla(26, 88%, 69%, 1);
@@ -91,6 +91,7 @@ body
 }
 #num1
 {
+    
     display: inline-block;
     border-radius: 15px;
     
@@ -127,7 +128,7 @@ body
 }
 .btn:hover
 {
-    background: #004E64;
+    background: rgb(214, 129, 31);
     color: #fff;
 }
 .btn2
@@ -141,6 +142,6 @@ body
 }
 .btn2:hover
 {
-    background: hsla(211, 59%, 29%, 1);
+    background: rgb(214, 129, 31);
     color: #fff;
 }
