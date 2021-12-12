@@ -4,8 +4,8 @@ body
     font-size: 30px;
     font-family:'Poppins', sans-serif; 
     color: #000;
-    background: hsla(26, 88%, 69%, 1);
-    background: linear-gradient(270deg, hsla(26, 88%, 69%, 1) 0%, hsla(7, 96%, 35%, 1) 100%);
+    /* background: hsla(26, 88%, 69%, 1); */
+    /* background: linear-gradient(270deg, hsla(26, 88%, 69%, 1) 0%, hsla(7, 96%, 35%, 1) 100%); */
 }
 .image1
 {
@@ -21,7 +21,7 @@ body
 {
     text-decoration: none;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: white;
     padding: 20px;
     position: absolute;
@@ -33,12 +33,18 @@ body
     color: #000;
     height: 27%;
     width: 27%;
+    filter: drop-shadow(.5rem .5rem 1rem rgb(65, 62, 62));
+    
+}
+.l1:hover
+{
+    transform: translateY(0) scale(1.2);
 }
 .l2 
 {
     text-decoration: none;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: white;
     padding: 20px;
     position: absolute;
@@ -50,6 +56,11 @@ body
     color: #000;
     height: 27%;
     width: 27%;
+     filter: drop-shadow(.5rem .5rem 1rem rgb(65, 62, 62));
+}
+.l2:hover
+{
+    transform: translateY(0) scale(1.2);
 }
 .heading
 {
@@ -72,6 +83,7 @@ body
     color: #000;
     height: 35%;
     width: 35%;
+    filter: drop-shadow(.5rem .5rem 1rem rgb(65, 62, 62));
 }
 .GtoB
 {
@@ -88,6 +100,7 @@ body
     color: #000;
     height: 35%;
     width: 35%;
+    filter: drop-shadow(.5rem .5rem 1rem rgb(65, 62, 62));
 }
 #num1
 {
@@ -128,7 +141,7 @@ body
 }
 .btn:hover
 {
-    background: rgb(214, 129, 31);
+    background: rgb(0, 0, 0);
     color: #fff;
 }
 .btn2
@@ -142,6 +155,6 @@ body
 }
 .btn2:hover
 {
-    background: rgb(214, 129, 31);
+    background: rgb(0, 0, 0);
     color: #fff;
 }
