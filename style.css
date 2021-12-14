@@ -7,6 +7,38 @@ body
     /* background: hsla(26, 88%, 69%, 1); */
     /* background: linear-gradient(270deg, hsla(26, 88%, 69%, 1) 0%, hsla(7, 96%, 35%, 1) 100%); */
 }
+.wrapper
+{
+    padding-top: 5%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.typing{
+    
+    width: 20ch;
+    animation: typing 1s steps(20), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 .image1
 {
     height: 80%;
@@ -33,12 +65,12 @@ body
     color: #000;
     height: 27%;
     width: 27%;
-    filter: drop-shadow(.5rem .5rem 1rem rgb(65, 62, 62));
+    filter: drop-shadow(16px 16px 10px rgb(82, 82, 82));
     
 }
 .l1:hover
 {
-    transform: translateY(0) scale(1.2);
+    transform: translateY(0) scale(1.1);
 }
 .l2 
 {
@@ -56,7 +88,7 @@ body
     color: #000;
     height: 27%;
     width: 27%;
-     filter: drop-shadow(.5rem .5rem 1rem rgb(65, 62, 62));
+     filter: drop-shadow(16px 16px 10px rgb(82, 82, 82));
 }
 .l2:hover
 {

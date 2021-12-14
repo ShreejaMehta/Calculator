@@ -27,6 +27,7 @@
             gray += n1[0];
             for(let i=1; i<n1.length; i++)
             {
+                
                 gray+=xor_c(n1[i-1], n1[i]);
             }
                 document.getElementById('btoG').innerHTML = "Gray equivalent is:" + gray;
